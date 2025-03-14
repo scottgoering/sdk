@@ -13,3 +13,4 @@ their own configuration, the following columns will be automatically added to ea
 - `_sdc_deleted_at` - Passed from a Singer tap if DELETE events are able to be tracked. In general, this is populated when the tap is synced LOG_BASED replication. If not sent from the tap, this field will be null.
 - `_sdc_sequence` - The epoch (milliseconds) that indicates the order in which the record was queued for loading.
 - `_sdc_table_version` - Indicates the version of the table. This column is used to determine when to issue TRUNCATE commands during loading, where applicable.
+- `_sdc_sync_started_at` - The epoch (milliseconds) indicating the start of the target process.
